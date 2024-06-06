@@ -39,7 +39,9 @@
             <li class="nav__item">
               <a href="#services" class="nav__link">سرویس ها</a>
             </li>
-            <li class="nav__item"><a href="#menu" class="nav__link">منوی غذاها</a></li>
+            <li class="nav__item">
+              <a href="#menu" class="nav__link">منوی غذاها</a>
+            </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">ارتباط با ما</a>
             </li>
@@ -51,7 +53,11 @@
         <div class="nav__toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
         </div>
-        <a href="#" class="nav__logo">سبزینو</a>
+        <div class="flex items-center">
+        <a href="./signup.html" class="nav__link button hover:text-white scale-75 lg:scale-100">ثبت نام/ورود</a>
+        <a href="#" class="nav__logo  lg:mr-5">سبزینو</a>
+
+        </div>
       </nav>
     </header>
 
@@ -61,7 +67,7 @@
         <div class="home__container bd-container bd-grid">
           <div class="home__data">
             <h1 class="home__title font-bold">سبزینو</h1>
-            <h2 class="home__subtitle ">
+            <h2 class="home__subtitle">
               با سبزینو یک قدم به سبک زندگی جدید و سالم نزدیک تر می شوید
             </h2>
             <a href="#about" class="button">اطلاعات بیشتر</a>
@@ -80,10 +86,12 @@
               سلامتی، سبک زندگی نوین، تناسب
             </h2>
             <p class="about__description">
-              در سبزینو هدف ما فرهنگ سازی و اصلاح عادات غذایی اشتباه است، هدف سایت سبزینو ارائه ی برنامه های غذایی از پیش تعیین شده نمی باشد بلکه با در اختیار گذاشتن بستر های بارگذاری و اشتراک گذاری برای کاربران یک محیط مناسب و کاربر محور برای تجربیات غذایی فراهم میکند 
-              و در اخر
-              با در نظر گرفتن درصد چربی و BMI بدن شما ، مناسب ترین وعده های غذایی را به
-              شما معرفی می کند .
+              در سبزینو هدف ما فرهنگ سازی و اصلاح عادات غذایی اشتباه است، هدف
+              سایت سبزینو ارائه ی برنامه های غذایی از پیش تعیین شده نمی باشد
+              بلکه با در اختیار گذاشتن بستر های بارگذاری و اشتراک گذاری برای
+              کاربران یک محیط مناسب و کاربر محور برای تجربیات غذایی فراهم میکند
+              و در اخر با در نظر گرفتن درصد چربی و BMI بدن شما ، مناسب ترین وعده
+              های غذایی را به شما معرفی می کند .
             </p>
             <a href="#services" class="button">برو بریم!</a>
           </div>
@@ -93,7 +101,10 @@
       </section>
 
       <!--========== SERVICES ==========-->
-      <section class="services section bd-container services__container services__content " id="services">
+      <section
+        class="services section bd-container services__container services__content"
+        id="services"
+      >
         <span class="section-subtitle"
           >محاسبه رایگان BMI و درصد چربی بدن شما</span
         >
@@ -118,7 +129,9 @@
                 />
               </div>
 
-              <a class="button flex justify-center !items-center">محاسبه BMI </a>
+              <a class="button flex justify-center !items-center"
+                >محاسبه BMI
+              </a>
             </div>
           </form>
         </div>
@@ -134,7 +147,7 @@
                   id=""
                   class="border border-green-600 text-gray-400 w-full bg-white rounded-lg p-3"
                 >
-                <option value="value" selected disabled hidden>جنسیت</option>
+                  <option value="value" selected disabled hidden>جنسیت</option>
                   <option value="خانم">خانم</option>
                   <option value="آقا">آقا</option>
                 </select>
@@ -147,7 +160,9 @@
                 />
               </div>
 
-              <a class="button flex justify-center !items-center">محاسبه درصد چربی </a>
+              <a class="button flex justify-center !items-center"
+                >محاسبه درصد چربی
+              </a>
             </div>
           </form>
         </div>
@@ -182,7 +197,9 @@
           <div class="menu__content">
             <img src="assets/img/plate3.png" alt="" class="menu__img" />
             <h3 class="menu__name">سالاد اسپانیایی</h3>
-            <span class="menu__detail">قارچ گریل شده، سس سویا، پیاز...بیشتر</span>
+            <span class="menu__detail"
+              >قارچ گریل شده، سس سویا، پیاز...بیشتر</span
+            >
             <span class="menu__preci">کالری : 250</span>
             <a href="#" class="button menu__button"
               ><i class="bx bx-plus"></i
@@ -219,14 +236,18 @@
       <section class="contact section bd-container" id="contact">
         <div class="contact__container bd-grid">
           <div class="contact__data">
-            <span class="section-subtitle contact__initial">با ما در ارتباط باشید</span>
+            <span class="section-subtitle contact__initial"
+              >با ما در ارتباط باشید</span
+            >
             <h2 class="section-title contact__initial !mb-2">تماس با ما</h2>
             <p class="contact__description">
-شما میتوانید با درج نظرات و پیشنهادات خود موجب  ارتقای کیفیت تیم سبزینو شوید .            </p>
+              شما میتوانید با درج نظرات و پیشنهادات خود موجب ارتقای کیفیت تیم
+              سبزینو شوید .
+            </p>
           </div>
 
           <div class="contact__button">
-            <a href="#" class="button !items-end	">ارسال پیام</a>
+            <a href="#" class="button !items-end">ارسال پیام</a>
           </div>
         </div>
       </section>
