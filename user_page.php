@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,34 +23,18 @@
     <title>Health Bank</title>
   </head>
   <body>
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-      <i class="bx bx-chevron-up scrolltop__icon"></i>
-    </a>
-
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link active-link">صفحه اصلی</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">درباره ما</a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">سرویس ها</a>
+              <a href="./index.html" class="nav__link ">صفحه اصلی</a>
             </li>
             <li class="nav__item">
               <a href="./user_status.html" class="nav__link">وضعیت من</a>
             </li>
-            <li class="nav__item">
-              <a href="#menu" class="nav__link">منوی غذاها</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">ارتباط با ما</a>
-            </li>
+            
 
             <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
           </ul>
@@ -57,12 +44,16 @@
           <i class="bx bx-menu"></i>
         </div>
         <div class="flex items-center">
-        <a href="./signup.html" class="nav__link button hover:text-white scale-75 lg:scale-100">ثبت نام/ورود</a>
         <a href="#" class="nav__logo  lg:mr-5">سبزینو</a>
 
         </div>
       </nav>
     </header>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
 
     <main class="l-main">
       <!--========== HOME ==========-->
@@ -115,10 +106,11 @@
 
         <h2 class="section-title mt-7">BMI بدن من چقدر است؟</h2>
         <div>
-          <form action="" class="border border-green-600 p-7 rounded-lg">
+          <form action="bmi.php" method="post" class="border border-green-600 p-7 rounded-lg">
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
                 <input
+                name="user_weight"
                   class="border border-green-600 w-full rounded-lg p-3"
                   type="number"
                   placeholder="وزن شما(kg) :"
@@ -126,16 +118,18 @@
               </div>
               <div>
                 <input
+                name="user_height"
                   class="border border-green-600 w-full rounded-lg p-3"
                   type="number"
-                  placeholder="قد شما (cm) :"
+                  value="<?php echo isset($_SESSION['user_height']) ? htmlspecialchars($_SESSION['user_height']) : 'Guest'; ?>"
+                  readonly
                 />
               </div>
-
-              <button class="button flex justify-center !items-center" type="submit" disabled>محاسبه</button>
+              <button class="button flex justify-center !items-center" type="submit">محاسبه</button>
+              <!-- <a class="button flex justify-center !items-center"
+                >محاسبه BMI
+              </a> -->
             </div>
-            <p class="text-center mt-4">برای مشاهده وارد حساب خود شوید</p>
-
           </form>
         </div>
         <!--========== FAT PERCEMT ==========-->
@@ -143,7 +137,7 @@
         <h2 class="section-title mt-7">درصد چربی بدن من چقدر است؟</h2>
         <div>
           <form action="" class="border border-green-600 p-7 rounded-lg">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" >
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
                 <select
                   name=""
@@ -163,10 +157,10 @@
                 />
               </div>
 
-              <button class="button flex justify-center !items-center" type="submit" disabled>محاسبه</button>
+              <a class="button flex justify-center !items-center"
+                >محاسبه درصد چربی
+              </a>
             </div>
-            <p class="text-center mt-4">برای مشاهده وارد حساب خود شوید</p>
-
           </form>
         </div>
       </section>
@@ -210,6 +204,7 @@
           </div>
         </div>
       </section>
+
 
       <!--========== CONTACT US ==========-->
       <section class="contact section bd-container" id="contact">

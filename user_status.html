@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="" href="./assets/img/favicon.png" />
+    <!--========== TAILWIND CONNECTION ==========-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Health Bank</title>
+  </head>
+  <body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">صفحه اصلی</a>
+            </li>
+            <li class="nav__item">
+              <a href="./user_status.html" class="nav__link active-link"
+                >وضعیت من</a
+              >
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="flex items-center">
+          <a href="#" class="nav__logo lg:mr-5">سبزینو</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--========== SERVICES ==========-->
+      <section
+        class="services section bd-container services__container services__content"
+        id="services"
+      >
+        <span class="section-subtitle mb-8"> BMI و درصد چربی بدن شما</span>
+        <!--========== BMI FORM ==========-->
+
+        <div>
+          <div action="" class="border border-green-600 p-4 rounded-lg">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+              <div
+                class="border p-3 border-green-600 flex items-center justify-center rounded-lg"
+              >
+                <div class="p-3">BMI شما :</div>
+                <div>324</div>
+              </div>
+
+              <div
+                class="border p-3 border-green-600 flex items-center justify-center rounded-lg"
+              >
+                <div class="p-3">درصد چربی شما :</div>
+                <div>324</div>
+              </div>
+
+              <div
+                class="border p-3 border-green-600 flex items-center justify-center rounded-lg"
+              >
+                <div class="p-3">وضعیت :</div>
+                <div>معمولی</div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--========== DIAGRAM ==========-->
+      
+
+      <!-- <div class="flex justify-center w-4/5"><img src="./assets/img/IMG_1954.JPG" alt="" /></div> -->
+      <!--========== MENU ==========-->
+      <section class="menu section bd-container" id="menu">
+        <h2 class="section-subtitle">چه غذاهایی برای من مناسب است؟</h2>
+
+        <div class="menu__container bd-grid">
+          <div class="menu__content">
+            <img src="assets/img/plate1.png" alt="" class="menu__img" />
+            <h3 class="menu__name">سالاد کبابی</h3>
+            <span class="menu__detail">سینه مرغ،کاهو،... بیشتر</span>
+            <span class="menu__preci">کالری : 350</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-plus"></i
+            ></a>
+          </div>
+
+          <div class="menu__content">
+            <img src="assets/img/plate2.png" alt="" class="menu__img" />
+            <h3 class="menu__name">سالاد سالمون</h3>
+            <span class="menu__detail">ماهی سالمون، کام پیچ، قارچ...بیشتر</span>
+            <span class="menu__preci">کالری : 230</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-plus"></i
+            ></a>
+          </div>
+
+          <div class="menu__content">
+            <img src="assets/img/plate3.png" alt="" class="menu__img" />
+            <h3 class="menu__name">سالاد اسپانیایی</h3>
+            <span class="menu__detail"
+              >قارچ گریل شده، سس سویا، پیاز...بیشتر</span
+            >
+            <span class="menu__preci">کالری : 250</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-plus"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">سبزینو</a>
+          <span class="footer__description">پروژه پایانی</span>
+          <div>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">سرویس ها</h3>
+          <ul>
+            <li><a href="#" class="footer__link">نظرات</a></li>
+            <li><a href="#" class="footer__link">کالری ها</a></li>
+            <li><a href="#" class="footer__link">غذاهای مضر</a></li>
+            <li><a href="#" class="footer__link">شخصی سازی پیشرفته</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">اطلاعات</h3>
+          <ul>
+            <li><a href="#" class="footer__link">رویداد ها</a></li>
+            <li><a href="#" class="footer__link">درباره ما</a></li>
+            <li><a href="#" class="footer__link">اعتماد و امنیت</a></li>
+            <li><a href="#" class="footer__link">همکاری با ما</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">آدرس</h3>
+          <ul>
+            <li>ایران، تهران</li>
+            <li>خانی آباد، دانشگاه شریعتی</li>
+            <li>999 - 888 - 777</li>
+            <li>Shariaty@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; ساخته شده توسط مدیسا حمزه و تینا حافظی</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -19,81 +19,113 @@
 
     <title>Health Bank | Sign Up</title>
   </head>
-  <body class="flex items-center justify-center h-screen">
-    <!--========== Sign Up ==========-->
-    <div>
-      <h2 class="section-title mt-7 text-green-600">ثبت نام</h2>
+  <body >
+     <!--========== HEADER ==========-->
+     <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link ">صفحه اصلی</a>
+            </li>
+            
+            
 
-      <div>
-        <form action="" class="border border-green-600 p-7 rounded-lg">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div>
-              <input
-                class="border border-green-600 w-full rounded-lg p-3"
-                type="text"
-                placeholder="نام :"
-              />
-            </div>
-            <div>
-              <input
-                class="border border-green-600 w-full rounded-lg p-3"
-                type="text"
-                placeholder="نام خانوداگی : "
-              />
-            </div>
-            <div>
-                <input
-                  class="border border-green-600 w-full rounded-lg p-3"
-                  type="text"
-                  placeholder="شماره تلفن : "
-                />
-              </div>
-              <div>
-                <input
-                  class="border border-green-600 w-full rounded-lg p-3"
-                  type="password"
-                  placeholder="رمز عبور : "
-                />
-              </div>
-              <div>
-                <input
-                  class="border border-green-600 w-full rounded-lg p-3"
-                  type="password"
-                  placeholder="تکرار رمز عبور : "
-                />
-              </div>
-            <div>
-              <input
-                class="border border-green-600 w-full rounded-lg p-3"
-                type="text"
-                placeholder="استان : "
-              />
-            </div>
-            <div>
-              <input
-                class="border border-green-600 w-full rounded-lg p-3"
-                type="number"
-                placeholder="شهر : "
-              />
-            </div>
-            <div>
-              <select
-                name=""
-                id=""
-                class="border border-green-600 text-gray-400 w-full bg-white rounded-lg p-3"
-              >
-                <option value="value" selected disabled hidden>جنسیت</option>
-                <option value="خانم">خانم</option>
-                <option value="آقا">آقا</option>
-              </select>
-            </div>
-            <a class="button flex justify-center !items-center">ثبت نام</a>
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+        <div class="flex items-center">
+        <a href="#" class="nav__logo  lg:mr-5">سبزینو</a>
+
+        </div>
+      </nav>
+    </header>
+    <div class="flex items-center justify-center h-screen">
+ <!--========== Sign Up ==========-->
+ <div>
+  <h2 class="section-title mt-7 text-green-600">ثبت نام</h2>
+
+  <div>
+    <form action="signin.php" method="post" class="border border-green-600 p-7 rounded-lg">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <input
+            name="user_name"
+            class="border border-green-600 w-full rounded-lg p-3"
+            type="text"
+            placeholder="نام :"
+          />
+        </div>
+        <div>
+          <input
+            name="user_lastname"
+            class="border border-green-600 w-full rounded-lg p-3"
+            type="text"
+            placeholder="نام خانوداگی : "
+          />
+        </div>
+        <div>
+            <input
+              name="user_phone"
+              class="border border-green-600 w-full rounded-lg p-3"
+              type="text"
+              placeholder="شماره تلفن : "
+            />
           </div>
-        </form>
+          <div>
+          <input
+          name="user_height"
+            class="border border-green-600 w-full rounded-lg p-3"
+            type="number"
+            placeholder="قد : "
+          />
+          </div>
+          <div>
+            <input
+            name="user_password"
+              class="border border-green-600 w-full rounded-lg p-3"
+              type="password"
+              placeholder="رمز عبور : "
+            />
+          </div>
+          <div>
+            <input
+            name="password_check"
+              class="border border-green-600 w-full rounded-lg p-3"
+              type="password"
+              placeholder="تکرار رمز عبور : "
+            />
+          </div>
+        
+        <div>
+          <select
+            name="user_gender"
+            id=""
+            class="border border-green-600 text-gray-400 w-full bg-white rounded-lg p-3"
+          >
+            <option value="value" selected disabled hidden>جنسیت</option>
+            <option value="خانم">خانم</option>
+            <option value="آقا">آقا</option>
+          </select>
         </div>
-        <div class="flex justify-center">
-          <a href="./signin.html" class="section-title mt-7  text-green-600">قبلا ثبت نام کرده اید؟ / ورود</ش>
+        <button type="submit" class="button flex justify-center !items-center">ثبت نام</button>
+        <!-- <a class="button flex justify-center !items-center">ثبت نام</a> -->
         </div>
+    </form>
     </div>
+    <div class="flex justify-center">
+      <a href="./signin.html" class="section-title mt-7  text-green-600">قبلا ثبت نام کرده اید؟ / ورود</ش>
+    </div>
+</div>
+    </div>
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
